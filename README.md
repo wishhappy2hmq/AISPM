@@ -14,7 +14,7 @@ project/
 │   ├── trainer.py          # Training code  
 │   └── evaluator.py        # Evaluation code  
 └── checkpoints/             # Model save location  
-Environment Requirements  
+1.Environment Requirements  
 （1）Reference Hardware Configuration  
 GPU: NVIDIA GeForce RTX 3090  
 OS: Ubuntu 18.04  
