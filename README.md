@@ -1,24 +1,24 @@
-This is an AI-based signal prediction system that combines a spatiotemporal graph network and a Transformer architecture. It can effectively capture spatiotemporal dependencies between nodes and perform accurate signal prediction¡£
+This is an AI-based signal prediction system that combines a spatiotemporal graph network and a Transformer architecture. It can effectively capture spatiotemporal dependencies between nodes and perform accurate signal predictionã€‚
 
 project/
-©À©¤©¤ main.py                 # Main program entry
-©À©¤©¤ config.py               # Configuration parameter management
-©À©¤©¤ README.md               # Project documentation
-©À©¤©¤ data/
-©¦   ©¸©¤©¤ dataset.py          # Data processing
-©À©¤©¤ models/
-©¦   ©À©¤©¤ generator.py        # Generator model
-©¦   ©À©¤©¤ discriminator.py    # Discriminator model
-©¦   ©¸©¤©¤ components.py       # Model components
-©À©¤©¤ training/
-©¦   ©À©¤©¤ trainer.py          # Training code
-©¦   ©¸©¤©¤ evaluator.py        # Evaluation code
-©¸©¤©¤ checkpoints/             # Model save location
+â”œâ”€â”€ main.py                 # Main program entry
+â”œâ”€â”€ config.py               # Configuration parameter management
+â”œâ”€â”€ README.md               # Project documentation
+â”œâ”€â”€ data/
+â”‚   â””â”€â”€ dataset.py          # Data processing
+â”œâ”€â”€ models/
+â”‚   â”œâ”€â”€ generator.py        # Generator model
+â”‚   â”œâ”€â”€ discriminator.py    # Discriminator model
+â”‚   â””â”€â”€ components.py       # Model components
+â”œâ”€â”€ training/
+â”‚   â”œâ”€â”€ trainer.py          # Training code
+â”‚   â””â”€â”€ evaluator.py        # Evaluation code
+â””â”€â”€ checkpoints/             # Model save location
 Environment Requirements
-£¨1£©Reference Hardware Configuration
+ï¼ˆ1ï¼‰Reference Hardware Configuration
 GPU: NVIDIA GeForce RTX 3090
 OS: Ubuntu 18.04
-2.	Software Requirements£º
+2.	Software Requirementsï¼š
 Pytorch 2.0.0
 Puthon 3.9
 Opencv 4.12.0.88
@@ -27,12 +27,12 @@ scikit-learn 1.6.1
 scikit-image 0.24.0
 numpy 1.23.5
 3.Data Preparation
-Data files should be tab-separated text files containing the following columns£º
+Data files should be tab-separated text files containing the following columnsï¼š
 Frame ID (frame_id); Node ID (node_id); Node Feature (node_feature)
 To ensure code execution, we provide a little batch dataset. dataset.py provides data processing related workflows.
 4.Quick Start
 (1) Configure Parameters
-Modify relevant parameters in config.py:£º
+Modify relevant parameters in config.py:ï¼š
 DATA_CONFIG = {
     'obs_len': 90,        # Observation sequence length
     'pred_len': 450,      # Prediction sequence length
